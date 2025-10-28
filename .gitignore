@@ -1,0 +1,13 @@
+# compiled stuff
+**/build
+/install
+/.cache
+/.vscode
+/cpm_modules
+
+# macOS
+.DS_Store
+
+# ctags
+**/tags
+
