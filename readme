@@ -1,31 +1,3 @@
-# C++20 Template Repo
-
-1. Replace PROJECTNAME to your project name.
-
-The following command can help with that, replace NEW_PROJECTNAME to yours.
-```
-NEW_PROJECTNAME="dots_and_boxes"
-mv PROJECTNAME $NEW_PROJECTNAME
-find . -type f -not -path "./install/*" -not -path "./build/*" -not -name "readme" \
-  -exec grep -l "PROJECTNAME" {} + | while read -r f; do
-    echo "Replaced in: $f"
-    sed -i "s/PROJECTNAME/$NEW_PROJECTNAME/g" "$f"
-done
-```
-
-2. Template prepared a init script `init_template.sh` for download CPM, network require.
-
-3. Template prepared a YCM config `.ycm_extra_conf.py`
-Add this line to `~/.vimrc` to turn off YCM external config safety check.
-```
-let g:ycm_extra_conf_globlist = ['REALPATH_TO_PROJECT/*']
-```
-
-4. A build cheetsheet at `cheetsheet.txt`
-
-5. There are serveal github action file, but only `ubuntu.yml` is active.
-
-
 Note: linux only, using GNU bitset feature.
 
 
